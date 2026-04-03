@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jump Aero — Rapid emergency medical response when every second counts. Rapid emergency medical response — because O2 loss to the brain is fatal after 12 minutes.">
+    <meta name="keywords" content="EMS, emergency medical services, rapid response, first responder, air ambulance, eVTOL, Jump Aero, rural EMS, rapid response time">
+    <meta name="author" content="Jump Aero">
+    <title>Jump Aero — When Every Second Counts</title>
+
+    <!-- Fonts: Exo 2 as stand-in for brand font, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NAVIGATION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <nav id="main-nav" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Jump Aero Home">
+                <img src="LOGOs/JA-logo-horizontal-white.png" alt="Jump Aero" class="logo-img">
+            </a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#crisis" class="nav-link">The Crisis</a></li>
+                <li><a href="#mission" class="nav-link">Our Mission</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#join" class="nav-link">Join the Club</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Get In Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- HERO -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="images/Pilot_Pulse.jpg" alt="EMS first responder with rapid-response aircraft" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">EMERGENCY MEDICAL RESPONSE</p>
+            <h1 class="hero-title">When Every<br><span class="text-accent">Second Counts</span></h1>
+            <p class="hero-subtitle">O2 loss to the brain is fatal after 12 minutes. The average rural EMS response takes 14. We're changing that.</p>
+            <div class="hero-actions">
+                <a href="#mission" class="btn btn-primary" id="hero-learn-more">Learn How We Help</a>
+                <a href="#contact" class="btn btn-outline" id="hero-contact">Request Information</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="8">0</span><span class="hero-stat-unit">min</span>
+                    <span class="hero-stat-label">Target Response</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="288">0</span><span class="hero-stat-unit">mph</span>
+                    <span class="hero-stat-label">Dash Speed</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="60">0</span><span class="hero-stat-unit">sec</span>
+                    <span class="hero-stat-label">Alert to Airborne</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- THE CRISIS -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="crisis" class="section section-crisis">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">THE PROBLEM</p>
+                <h2 class="section-title">A Response Time <span class="text-accent">Crisis</span></h2>
+                <p class="section-subtitle">Across America, millions live too far from life-saving emergency care. In rural communities, the difference between survival and tragedy is a clock no one can stop.</p>
+            </div>
+
+            <div class="crisis-grid">
+                <div class="crisis-card crisis-card--featured">
+                    <div class="crisis-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12V24L32 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-card-number">14<span class="crisis-card-unit">min+</span></div>
+                    <h3 class="crisis-card-title">Median Rural Response</h3>
+                    <p class="crisis-card-text">Median rural emergency response times exceed 14 minutes — double the life-saving threshold. For 10% of rural calls, delays approach 30 minutes.</p>
+                </div>
+
+                <div class="crisis-card">
+                    <div class="crisis-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-card-number">7-10<span class="crisis-card-unit">%</span></div>
+                    <h3 class="crisis-card-title">Survival Loss Per Minute</h3>
+                    <p class="crisis-card-text">For cardiac arrest, survival chances decrease 7-10% per minute without intervention. Every second truly counts.</p>
+                </div>
+
+                <div class="crisis-card">
+                    <div class="crisis-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 40L24 8L40 40H8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M24 22V30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="24" cy="35" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-card-number">60<span class="crisis-card-unit">%</span></div>
+                    <h3 class="crisis-card-title">Rural Trauma Deaths</h3>
+                    <p class="crisis-card-text">Rural residents account for 60% of trauma-related deaths despite making up only 15-20% of the population.</p>
+                </div>
+
+                <div class="crisis-card">
+                    <div class="crisis-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 24C12 17.4 17.4 12 24 12C30.6 12 36 17.4 36 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 36V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 36H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 20V24H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-card-number">60<span class="crisis-card-unit">M+</span></div>
+                    <h3 class="crisis-card-title">Rural Americans Underserved</h3>
+                    <p class="crisis-card-text">Over 60 million Americans live in rural areas with limited or no access to advanced emergency medical services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- THE HUMAN COST — PREVENTABLE DEATHS -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="human-cost" class="section section-human-cost">
+        <div class="container">
+            <div class="human-cost-header">
+                <p class="section-eyebrow">THE HUMAN COST</p>
+                <h2 class="human-cost-number">50,000<span class="human-cost-plus">+</span></h2>
+                <p class="human-cost-headline">Preventable Deaths Every Year</p>
+                <p class="human-cost-subtitle">It simply takes too long to get help in rural areas. For every condition — stroke, heart disease, respiratory failure, injury — rural residents die at dramatically higher rates than their metropolitan neighbors. Not because care doesn't exist. Because it arrives too late.</p>
+            </div>
+
+            <div class="human-cost-chart">
+                <div class="hc-chart-group">
+                    <div class="hc-bars">
+                        <div class="hc-bar hc-bar--rural" style="--bar-height: 40%">
+                            <span class="hc-bar-value">40%</span>
+                        </div>
+                        <div class="hc-bar hc-bar--metro" style="--bar-height: 30%">
+                            <span class="hc-bar-value">30%</span>
+                        </div>
+                    </div>
+                    <span class="hc-chart-label">Stroke</span>
+                </div>
+
+                <div class="hc-chart-group">
+                    <div class="hc-bars">
+                        <div class="hc-bar hc-bar--rural" style="--bar-height: 43%">
+                            <span class="hc-bar-value">43%</span>
+                        </div>
+                        <div class="hc-bar hc-bar--metro" style="--bar-height: 28%">
+                            <span class="hc-bar-value">28%</span>
+                        </div>
+                    </div>
+                    <span class="hc-chart-label">Heart Disease</span>
+                </div>
+
+                <div class="hc-chart-group">
+                    <div class="hc-bars">
+                        <div class="hc-bar hc-bar--rural" style="--bar-height: 55%">
+                            <span class="hc-bar-value">55%</span>
+                        </div>
+                        <div class="hc-bar hc-bar--metro" style="--bar-height: 33%">
+                            <span class="hc-bar-value">33%</span>
+                        </div>
+                    </div>
+                    <span class="hc-chart-label">Respiratory Failure</span>
+                </div>
+
+                <div class="hc-chart-group">
+                    <div class="hc-bars">
+                        <div class="hc-bar hc-bar--rural" style="--bar-height: 58%">
+                            <span class="hc-bar-value">58%</span>
+                        </div>
+                        <div class="hc-bar hc-bar--metro" style="--bar-height: 40%">
+                            <span class="hc-bar-value">40%</span>
+                        </div>
+                    </div>
+                    <span class="hc-chart-label">Injury</span>
+                </div>
+            </div>
+
+            <div class="hc-legend">
+                <div class="hc-legend-item">
+                    <span class="hc-legend-swatch hc-legend-swatch--rural"></span>
+                    <span>Rural — % of Deaths Preventable</span>
+                </div>
+                <div class="hc-legend-item">
+                    <span class="hc-legend-swatch hc-legend-swatch--metro"></span>
+                    <span>Metropolitan — % of Deaths Preventable</span>
+                </div>
+            </div>
+
+            <p class="hc-source">Source: National Rural Health Association Policy Brief: EMS Services in Rural America — Challenges and Opportunities, 2018</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- LANDSCAPE PARALLAX DIVIDER -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="parallax-divider" aria-hidden="true">
+        <img src="images/rural_landscape.png" alt="" class="parallax-img" loading="lazy">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-text">
+            <p class="parallax-quote">"O2 loss to the brain is fatal after 12 minutes. The average rural EMS response time is over 14. Every second counts."</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- OUR MISSION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="mission" class="section section-mission">
+        <div class="container">
+            <div class="mission-layout">
+                <div class="mission-image-col">
+                    <div class="mission-image-wrapper">
+                        <img src="images/EMT.jpg" alt="EMS flight paramedic ready for rapid response" class="mission-image" loading="lazy">
+                        <div class="mission-image-accent"></div>
+                    </div>
+                </div>
+                <div class="mission-text-col">
+                    <p class="section-eyebrow">OUR MISSION</p>
+                    <h2 class="section-title">Getting Help There <span class="text-accent">Faster</span></h2>
+                    <p class="mission-text">When someone you love has a medical emergency, you don't care how help arrives — you just need it <strong>now</strong>.</p>
+                    <p class="mission-text">Jump Aero exists to bridge the deadly gap between the 911 call and the moment a paramedic reaches your side. We're building the fastest emergency medical response system ever created — purpose-built for the communities that need it most.</p>
+                    <p class="mission-text">Our approach combines proven aerospace engineering with a single, unwavering goal: <strong>get there before the 12-minute threshold — when every second counts.</strong></p>
+                    <div class="mission-features">
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L15 8.5L22 9.5L17 14.5L18 21.5L12 18.5L6 21.5L7 14.5L2 9.5L9 8.5L12 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Pilot-Paramedic Aboard</h4>
+                                <p>A trained EMT on-site in minutes — not a drone, a human decision-maker.</p>
+                            </div>
+                        </div>
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Under 8-Minute Target</h4>
+                                <p>30-mile radius coverage in under 8 minutes from dispatch.</p>
+                            </div>
+                        </div>
+                        <div class="mission-feature">
+                            <div class="mission-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div>
+                                <h4>Quiet Operations</h4>
+                                <p>Dramatically quieter than helicopters — minimal community disruption during emergency response.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- HOW IT WORKS -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="how-it-works" class="section section-how">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">THE PROCESS</p>
+                <h2 class="section-title">From 911 Call to <span class="text-accent">On-Scene Care</span></h2>
+                <p class="section-subtitle">A radically faster way to get a trained paramedic to the people who need help most.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-step" data-step="1">
+                    <div class="timeline-step-marker">
+                        <span>01</span>
+                    </div>
+                    <div class="timeline-step-content">
+                        <h3>Emergency Dispatched</h3>
+                        <p>A 911 call is received. The system identifies an emergency suited for rapid aerial response — cardiac events, trauma, stroke, or situations where ground transport faces critical delays.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step" data-step="2">
+                    <div class="timeline-step-marker">
+                        <span>02</span>
+                    </div>
+                    <div class="timeline-step-content">
+                        <h3>60-Second Launch</h3>
+                        <p>A pilot-paramedic receives the alert, boards the aircraft, and is airborne in under 60 seconds. Vertical takeoff means no runway needed — launch from a station pad, hospital roof, or prepared site.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step" data-step="3">
+                    <div class="timeline-step-marker">
+                        <span>03</span>
+                    </div>
+                    <div class="timeline-step-content">
+                        <h3>High-Speed Transit</h3>
+                        <p>The aircraft transitions to high-speed cruise at up to 288 mph — covering a 30-mile radius in under 8 minutes. No traffic, no road conditions, no detours. Direct line to the patient.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step" data-step="4">
+                    <div class="timeline-step-marker">
+                        <span>04</span>
+                    </div>
+                    <div class="timeline-step-content">
+                        <h3>On-Scene Care Begins</h3>
+                        <p>Vertical landing near the patient — driveways, fields, parking lots, hillsides up to 10° slopes. The paramedic begins advanced life support immediately, stabilizing the patient for ground ambulance transport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- IMPACT -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="impact" class="section section-impact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">THE DIFFERENCE</p>
+                <h2 class="section-title">Why Speed <span class="text-accent">Saves Lives</span></h2>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-card-visual">
+                        <div class="impact-bar-chart">
+                            <div class="impact-bar" data-height="85">
+                                <span class="impact-bar-label">Today</span>
+                                <span class="impact-bar-value">14+ min</span>
+                            </div>
+                            <div class="impact-bar impact-bar--new" data-height="35">
+                                <span class="impact-bar-label">With Jump Aero</span>
+                                <span class="impact-bar-value">&lt;8 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Rural Response Times</h3>
+                    <p>Cut rural emergency response from 14+ minutes to under 8 — bringing rural communities within the life-saving threshold for the first time.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-card-visual">
+                        <div class="impact-cost-compare">
+                            <div class="impact-cost">
+                                <span class="impact-cost-label">Traditional Helicopter</span>
+                                <span class="impact-cost-value">$2,000–$5,000<small>/hr</small></span>
+                            </div>
+                            <div class="impact-cost impact-cost--new">
+                                <span class="impact-cost-label">Jump Aero</span>
+                                <span class="impact-cost-value">60-70%<small> less</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Affordable Operations</h3>
+                    <p>Dramatically lower per-mission costs make continuous aerial EMS coverage viable for communities that could never afford traditional helicopter services.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-card-visual">
+                        <div class="impact-coverage-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="54" stroke="var(--color-border)" stroke-width="3" fill="none"/>
+                                <circle cx="60" cy="60" r="54" stroke="var(--color-accent)" stroke-width="3" fill="none" 
+                                    stroke-dasharray="339.29" stroke-dashoffset="339.29" class="coverage-progress"
+                                    transform="rotate(-90 60 60)"/>
+                                <text x="60" y="55" text-anchor="middle" fill="var(--color-text-primary)" font-size="22" font-weight="700" font-family="'Exo 2'">30</text>
+                                <text x="60" y="72" text-anchor="middle" fill="var(--color-text-secondary)" font-size="10" font-family="Inter">mile radius</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Coverage Radius</h3>
+                    <p>Each station covers a 30-mile radius — providing rapid emergency response to communities across nearly 3,000 square miles from a single location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- TRUSTED BY / VALIDATION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="section section-trust">
+        <div class="container">
+            <div class="trust-bar">
+                <div class="trust-item">
+                    <div class="trust-value">$3.6M</div>
+                    <div class="trust-label">U.S. Air Force AFWERX Contracts</div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <div class="trust-value">Falck</div>
+                    <div class="trust-label">First Commercial Purchase (4 Aircraft)</div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <div class="trust-value">MIT</div>
+                    <div class="trust-label">Founder's Aerospace Pedigree</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- JOIN THE JUMP AERO CLUB -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="join" class="section section-club">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">BE PART OF THE SOLUTION</p>
+                <h2 class="section-title">Join the <span class="text-accent">Jump Aero Club</span></h2>
+                <p class="section-subtitle">Live in a rural community? Help us bring rapid emergency response to <strong>your area</strong>. When you join, you tell us where the need is — and lock in the founding member rate before services launch.</p>
+            </div>
+
+            <!-- Pricing Card -->
+            <div class="club-pricing club-pricing--single">
+                <div class="club-card club-card--featured" id="club-annual">
+                    <div class="club-card-header">
+                        <h3>Founding Membership</h3>
+                        <div class="club-price">
+                            <span class="club-price-dollar">$</span>
+                            <span class="club-price-amount">36</span>
+                            <span class="club-price-period">/yr</span>
+                        </div>
+                        <p class="club-price-note">Founding member rate — 10% of standard subscription</p>
+                    </div>
+                    <ul class="club-perks">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Founding Member status</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Priority focus for your area</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Exclusive invitations to JA events</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Bi-Annual Newsletter</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Limited Edition Challenge Coin</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Priority coverage when your area launches</span>
+                        </li>
+                    </ul>
+                    <a href="#club-signup" class="btn btn-primary btn-full">Join Now — $36/yr</a>
+                </div>
+            </div>
+
+            <!-- Why This Matters -->
+            <div class="club-why">
+                <div class="club-why-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M32 16V32L20 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                        <!-- Map pin dots -->
+                        <circle cx="20" cy="20" r="2" fill="var(--color-accent)" opacity="0.6"/>
+                        <circle cx="44" cy="22" r="2" fill="var(--color-accent)" opacity="0.8"/>
+                        <circle cx="42" cy="44" r="2" fill="var(--color-accent)" opacity="0.5"/>
+                        <circle cx="18" cy="40" r="2" fill="var(--color-accent)" opacity="0.7"/>
+                    </svg>
+                </div>
+                <div class="club-why-text">
+                    <h3>Why Your Subscription Matters</h3>
+                    <p>Your subscription tells us where the demand is. It's a vote for improving emergency medical response in your community.</p>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="club-signup" id="club-signup">
+                <div class="club-signup-header">
+                    <h3>Sign Up for the Jump Aero Club</h3>
+                    <p>Founding memberships are limited. Join now to lock in the 10% rate and help bring rapid EMS to your community.</p>
+                </div>
+                <form id="club-form" class="club-form" onsubmit="handleClubSignup(event)">
+                    <input type="hidden" id="club-plan" name="plan" value="annual">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="club-first-name">First Name</label>
+                            <input type="text" id="club-first-name" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="club-last-name">Last Name</label>
+                            <input type="text" id="club-last-name" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="club-email">Email</label>
+                        <input type="email" id="club-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="club-address">Street Address</label>
+                        <input type="text" id="club-address" name="address" required placeholder="Helps us map where to deploy">
+                    </div>
+                    <div class="form-row form-row--three">
+                        <div class="form-group">
+                            <label for="club-city">City</label>
+                            <input type="text" id="club-city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="club-state">State</label>
+                            <input type="text" id="club-state" name="state" required maxlength="2" placeholder="e.g. MT">
+                        </div>
+                        <div class="form-group">
+                            <label for="club-zip">ZIP Code</label>
+                            <input type="text" id="club-zip" name="zip" required maxlength="10" placeholder="e.g. 59601">
+                        </div>
+                    </div>
+
+                    <!-- Payment Information -->
+                    <div class="club-payment-divider">
+                        <span class="club-payment-divider-line"></span>
+                        <span class="club-payment-divider-label">
+                            <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 10H22" stroke="currentColor" stroke-width="1.5"/></svg>
+                            Payment Information
+                        </span>
+                        <span class="club-payment-divider-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="club-card-number">Card Number</label>
+                        <div class="card-input-wrapper">
+                            <input type="text" id="club-card-number" name="cardNumber" required 
+                                   placeholder="1234 5678 9012 3456" 
+                                   maxlength="19" 
+                                   inputmode="numeric"
+                                   autocomplete="cc-number">
+                            <div class="card-icons">
+                                <svg viewBox="0 0 38 24" class="card-icon card-icon--visa"><rect x="0.5" y="0.5" width="37" height="23" rx="3" fill="#1A1F71" stroke="#D9D9D9" stroke-width="0.5"/><text x="19" y="16" text-anchor="middle" fill="white" font-size="9" font-weight="700" font-family="Arial">VISA</text></svg>
+                                <svg viewBox="0 0 38 24" class="card-icon card-icon--mc"><rect x="0.5" y="0.5" width="37" height="23" rx="3" fill="#252525" stroke="#D9D9D9" stroke-width="0.5"/><circle cx="15" cy="12" r="7" fill="#EB001B" opacity="0.9"/><circle cx="23" cy="12" r="7" fill="#F79E1B" opacity="0.9"/></svg>
+                                <svg viewBox="0 0 38 24" class="card-icon card-icon--amex"><rect x="0.5" y="0.5" width="37" height="23" rx="3" fill="#2E77BC" stroke="#D9D9D9" stroke-width="0.5"/><text x="19" y="15" text-anchor="middle" fill="white" font-size="7" font-weight="700" font-family="Arial">AMEX</text></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="club-card-expiry">Expiration Date</label>
+                            <input type="text" id="club-card-expiry" name="cardExpiry" required 
+                                   placeholder="MM / YY" 
+                                   maxlength="7" 
+                                   inputmode="numeric"
+                                   autocomplete="cc-exp">
+                        </div>
+                        <div class="form-group">
+                            <label for="club-card-cvc">CVC</label>
+                            <input type="text" id="club-card-cvc" name="cardCvc" required 
+                                   placeholder="123" 
+                                   maxlength="4" 
+                                   inputmode="numeric"
+                                   autocomplete="cc-csc">
+                        </div>
+                    </div>
+                    <div class="club-secure-note">
+                        <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 11V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="12" cy="16" r="1.5" fill="currentColor"/>
+                        </svg>
+                        <span>Your payment is encrypted and secure. You will not be charged until the service launches in your area. Cancel anytime.</span>
+                    </div>
+
+                    <div class="club-plan-display">
+                        <span class="club-plan-label">Your Plan:</span>
+                        <span class="club-plan-value">Founding Membership — $36/yr</span>
+                    </div>
+                    <button type="submit" id="club-submit" class="btn btn-primary btn-full">Join the Club — $36/yr</button>
+                    <p class="club-form-note">Your information is secure and will never be shared. Subscription details and perks are subject to change as we grow. Cancel anytime.</p>
+                    <div id="club-success" class="form-success" style="display: none;">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        <p><strong>Welcome to the Club!</strong> We've received your founding membership. Check your email for confirmation and next steps.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- CONTACT -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info-col">
+                    <p class="section-eyebrow">GET IN TOUCH</p>
+                    <h2 class="section-title">Let's Talk About <span class="text-accent">Saving Lives</span></h2>
+                    <p class="contact-text">Whether you represent an EMS agency, municipality, hospital system, or simply want to learn more — we'd love to hear from you.</p>
+
+                    <div class="contact-reasons">
+                        <div class="contact-reason">
+                            <div class="contact-reason-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <span>EMS Agency Partnerships</span>
+                        </div>
+                        <div class="contact-reason">
+                            <div class="contact-reason-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <span>Municipal & Government Inquiries</span>
+                        </div>
+                        <div class="contact-reason">
+                            <div class="contact-reason-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <span>Media & Press</span>
+                        </div>
+                        <div class="contact-reason">
+                            <div class="contact-reason-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <span>General Inquiries & Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-col">
+                    <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-first-name">First Name</label>
+                                <input type="text" id="contact-first-name" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-last-name">Last Name</label>
+                                <input type="text" id="contact-last-name" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-org">Organization <span class="optional">(optional)</span></label>
+                            <input type="text" id="contact-org" name="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="ems-partnership">EMS Agency Partnership</option>
+                                <option value="government">Municipal / Government Inquiry</option>
+                                <option value="media">Media & Press</option>
+                                <option value="investment">Investment Interest</option>
+                                <option value="careers">Careers</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" id="contact-submit" class="btn btn-primary btn-full">Send Message</button>
+                        <div id="contact-success" class="form-success" style="display: none;">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            <p>Thank you! We'll be in touch soon.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- POTENTIAL IMPACT -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="potential-impact" class="section section-potential-impact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">POTENTIAL IMPACT</p>
+                <h2 class="section-title">Accelerating Emergency Response — <span class="text-accent">Saving Lives</span></h2>
+            </div>
+            <div class="potential-impact-img">
+                <img src="images/potentialImpact2.jpg" alt="Jump Aero accelerates emergency response — 67,000 lives saved per year in the U.S." loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="LOGOs/JA-logo-stacked-white.png" alt="Jump Aero" class="footer-logo" loading="lazy">
+                    <p class="footer-tagline">Rapid emergency medical response.<br>When every second counts.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn" id="social-linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="X (Twitter)" id="social-twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube" id="social-youtube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#crisis">The Crisis</a></li>
+                        <li><a href="#mission">Our Mission</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Engage</h4>
+                    <ul>
+                        <li><a href="#join">Jump Aero Club</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jump Aero, Inc. All rights reserved.</p>
+                <p class="footer-disclaimer">Jump Aero Club memberships help gauge deployment demand. Subscription details, perks, and pricing are subject to change. Service availability dependent on regulatory approval and infrastructure readiness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
