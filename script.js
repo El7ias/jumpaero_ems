@@ -48,7 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = document.querySelector(targetId);
             if (target) {
                 e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const navHeight = document.getElementById('main-nav').offsetHeight;
+                const extraPadding = 24; // breathing room below navbar
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight - extraPadding;
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
             }
         });
     });
