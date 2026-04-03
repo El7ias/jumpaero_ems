@@ -738,7 +738,7 @@ h1, h2, h3, h4 {
 }
 
 .hc-bar--metro .hc-bar-value {
-    color: var(--color-text-tertiary);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .hc-chart-label {
